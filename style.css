@@ -1,0 +1,50 @@
+body {
+    background-color: darkgray;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+}
+
+#wyczysc {
+    background-color: red;
+}
+
+#wyczysc:hover {
+    background-color: darkred;
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 30px;
+}
+
+.buttons {
+    margin-top: 100px;
+    display: grid;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: aliceblue;
+}
+
+.buttons > div {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+.button {
+    border: 1px soild #000;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}

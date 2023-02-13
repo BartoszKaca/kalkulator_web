@@ -1,10 +1,13 @@
 body {
-    background-color: darkgray;
+    align-items: center;
+    background: linear-gradient(320deg, grey, lightblue, white, black);
 }
 
 .container {
-    max-width: 400px;
+    max-width: 350px;
+    height: 1000px;
     margin: 10vh auto 0 auto;
+    border-radius: 10px;
 }
 
 #wyczysc {
@@ -20,21 +23,23 @@ body {
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
-    font-size: 30px;
-}
+    font-size: 30px;}
 
 .buttons {
     margin-top: 100px;
     display: grid;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: aliceblue;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    column-gap: 1px;
+    row-gap: 1px;
 }
 
 .buttons > div {
     border-top: 1px solid #000;
     border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
 .button:hover {
@@ -47,4 +52,5 @@ body {
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    border-radius: 10px;
 }

@@ -14,9 +14,8 @@ buttons.map( button => {
                 break;
             case '=':
                 const indexOfp = display.innerText.indexOf('(');
-                const indexOf2p = display.innerText.indexOf(')');
                 console.log(parseFloat(display.innerText[indexOfp-1]));
-                if(parseFloat(display.innerText[indexOfp-1])!='NaN')
+                if(indexOfp!=0&&parseFloat(display.innerText[indexOfp-1])!='NaN')
                 {
                     console.log(display.innerText.substring(0,indexOfp)+'*'+display.innerText.substring(indexOfp));
                     display.innerText = display.innerText.substring(0,indexOfp)+'*'+display.innerText.substring(indexOfp);
